@@ -1,0 +1,15 @@
+{
+  "title": "Douglas Brauner",
+  "url": "https://douglasbrauner.com/",
+  "description": "This is my personal Blog!",
+  "feed": {
+    "subtitle": "I am writing here in my own piece of land on the vast world of the Internet",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://douglasbrauner.com/"
+  },
+  "author": {
+    "name": "Douglas Brauner",
+    "email": "dbbrauner@gmail.com"
+  }
+}

@@ -1,0 +1,7 @@
+- Write a post about making a website in EC2
+- Write a post about set up a Route53
+- Write a post to setup a website with S3 - with HTTPS
+- auto update S3. Lambda?
+- Set up RSS feed
+- Integrate with Goodreads.
+- 
