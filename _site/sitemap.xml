@@ -57,11 +57,6 @@
   </url>
   
   <url>
-    <loc>https://douglasbrauner.com/tags/another-tag/</loc>
-    <lastmod>2020-06-27</lastmod>
-  </url>
-  
-  <url>
     <loc>https://douglasbrauner.com/tags/second-tag/</loc>
     <lastmod>2020-06-27</lastmod>
   </url>
@@ -69,5 +64,20 @@
   <url>
     <loc>https://douglasbrauner.com/tags/number-2/</loc>
     <lastmod>2020-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://douglasbrauner.com/tags/thoughts/</loc>
+    <lastmod>2020-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://douglasbrauner.com/tags/another-tag/</loc>
+    <lastmod>2020-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://douglasbrauner.com/posts/presentation/</loc>
+    <lastmod>2020-07-01</lastmod>
   </url>
 </urlset>
