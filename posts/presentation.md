@@ -25,3 +25,4 @@ will laught about it for being so wrong!
 ## How to find me
 I am not a heavy user of many social medias other than Instagram and Facebook, but I need a way to keep contact with other people from here as well, so you can find me on Twitter by @douglasbrauner, also
 you can drop me an email at dbbrauner@gmail.com. See ya in the next post!
+

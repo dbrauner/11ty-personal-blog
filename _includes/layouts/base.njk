@@ -30,7 +30,9 @@
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
-      {{ content | safe }}
+        <div class="article"> 
+          {{ content | safe }}
+        </div>
     </main>
 
     <footer></footer>
