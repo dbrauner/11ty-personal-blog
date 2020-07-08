@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Upload files
-        uses: hannut91/aws-cli@v1.18.43
+        uses: ItsKarma/aws-cli@v1.70.0
         with:
           args: s3 sync _site/ s3://brauner.xyz
         env:
