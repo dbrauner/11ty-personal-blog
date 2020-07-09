@@ -10,7 +10,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-          
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+      - run: npm install
+      - run: npx @11ty/eleventy
+      
       - name: Upload files
         uses: ItsKarma/aws-cli@master
         with:
