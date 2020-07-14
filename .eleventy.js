@@ -5,6 +5,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const htmlmin = require("html-minifier");
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -71,6 +73,26 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+        if (
+          process.env.ELEVENTY_PRODUCTION &&
+          outputPath &&
+          outputPath.endsWith(".html")
+        ) {
+          let minified = htmlmin.minify(content, {
+            useShortDoctype: true,
+            removeComments: true,
+            collapseWhitespace: true,
+          });
+          return minified;
+        }
+     
+        return content;
+    });
+ 
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
   return {
     templateFormats: [
       "md",

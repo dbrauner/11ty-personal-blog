@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 12.x
       - run: npm install
-      - run: npx @11ty/eleventy
+      - run: npm run build
       
       - name: Upload files
         uses: ItsKarma/aws-cli@master
