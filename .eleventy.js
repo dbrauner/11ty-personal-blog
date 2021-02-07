@@ -40,9 +40,12 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+  // eleventyConfig.addPassthroughCopy("css");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -73,8 +76,6 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
-
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (
           process.env.ELEVENTY_PRODUCTION &&
@@ -92,7 +93,6 @@ module.exports = function(eleventyConfig) {
         return content;
     });
  
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
   return {
     templateFormats: [
       "md",

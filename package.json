@@ -4,8 +4,8 @@
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
     "build": "ELEVENTY_PRODUCTION=true eleventy & ELEVENTY_PRODUCTION=true postcss css/tailwind.css --o _site/style.css",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve  & postcss css/tailwind.css --o _tmp/style.css --watch",
+    "watch": "postcss tailwind.css --o _tmp/style.css --watch & eleventy --serve",
+    "serve": "eleventy --serve  & postcss tailwind.css --o _tmp/style.css --watch",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -36,6 +36,7 @@
     "markdown-it-anchor": "^5.2.5",
     "postcss-clean": "^1.1.0",
     "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
     "tailwindcss": "^1.4.6"
   }
 }

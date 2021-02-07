@@ -11,10 +11,10 @@
 }
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
 }
 
 @mixin transition($transition) {
@@ -58,12 +58,6 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
-  color: var(--blue);
-}
-a[href]:visited {
-  color: var(--navy);
-}
 main {
   padding: 5% 4% 3% 30%;
   width: 100%;
@@ -79,7 +73,7 @@ header {
     height: 100%;
     width: 20%;
     min-width: 220px;
-    padding: 90px 2% 2% 2%;
+    padding: 45px 2% 2% 2%;
     overflow: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -165,7 +159,7 @@ pre {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
-    font-family: 'Source Sans Serif Pro', system-ui, sans-serif;
+    /* font-family: 'Source Sans Pro', system-ui, sans-serif; */
     font-size: 2em;
     text-decoration: none;
 }

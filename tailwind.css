@@ -1,12 +1,6 @@
+@import "css/index.css";
 @import "tailwindcss/base";
-
-h1 {
-    @apply text-2xl;
-}
-
-h2 {
-    @apply font-bold;
-}
+@import "css/custom-base-styles.css";
 
 @import "tailwindcss/components";
 

@@ -1,6 +1,7 @@
 // tailwind.config.js
 module.exports = {
-  theme: {},
+  theme: {
+  },
   variants: {},
   plugins: [],
 }

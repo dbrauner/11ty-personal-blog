@@ -1,0 +1,28 @@
+h1 {
+    @apply text-4xl font-extrabold tracking-wide;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1:hover {
+    @apply underline;
+}
+
+h2 {
+    @apply font-bold;
+}
+
+a {
+    @apply text-red-600;
+}
+a:hover {
+    @apply text-red-500 no-underline;
+}
+
+.home-header {
+    color: var(--darkgray);
+}
+
+.home-header:hover {
+    color: var(--darkgray);
+    @apply underline;
+}
