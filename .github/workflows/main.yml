@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: echo "hello Douglas this is a messsage for you using ${{ secrets.AWS_ACCESS_KEY_ID }} and ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
       - name: Checkout
         uses: actions/checkout@master
         
