@@ -4,6 +4,10 @@ on:
     branches: [ master ]
 jobs:
   deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
@@ -44,10 +48,6 @@ jobs:
         # Optional priority: 'high', 'normal' (default) or 'low'
         # priority: low
 
-    name: Deploy
-    runs-on: ubuntu-latest
-
-    steps:
       - run: echo "hello Douglas this is a messsage for you using ${{ secrets.AWS_ACCESS_KEY_ID }} and ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
       - name: Checkout
         uses: actions/checkout@master
