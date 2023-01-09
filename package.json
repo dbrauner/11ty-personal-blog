@@ -31,7 +31,7 @@
     "eslint": "^7.3.1",
     "html-minifier": "^4.0.0",
     "liquidjs": "^9.14.0",
-    "luxon": "^1.21.3",
+    "luxon": "^2.5.2",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "postcss-clean": "^1.1.0",
